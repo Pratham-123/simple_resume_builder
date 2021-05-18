@@ -45,23 +45,89 @@
                 <textarea type="text" 
                 id = addressField 
                 placeholder="Enter here your Address"
-                class="form-control"></textarea>
+                class="form-control"
+                rows = 5></textarea>
             </div>
+
+
+            <p class="text-primary my-3" >Important links</p>
+           
+            <div class="form-group">
+                <label for="fbField">Facebook ID</label>
+                <input type="text" 
+                id = "fbField" 
+                placeholder="Enter here your Facebook Profile"
+                class="form-control">
+            </div>
+            <div class="form-group mt-1">
+                <label for="linkedinField">Linkedin ID</label>
+                <input type="text" 
+                id =  "linkedinField"
+                placeholder="Enter here your Linkedin ID"
+                class="form-control">
+            </div>
+            <div class="form-group mt-1">
+                <label for="githubeiField">GitHub ID</label>
+                <input type="text" 
+                id = githubeiField 
+                placeholder="Enter here your Github ID"
+                class="form-control">
+            </div>
+
+
+
 
              
          </div>
 
          <div class="col-md-6">
              <!--second column-->
+             <h3>Professional Information</h3>
+             <div class="form-group">
+                <label for="">Objectives</label>
+                <textarea type="text" 
+                placeholder="Enter here your Address"
+                class="form-control "
+                rows = 2></textarea>
+            </div>
+
+            <div class="form-group mt-2" id ="we">
+                <label for="">Work Experiences</label>
+                <textarea type="text" 
+                placeholder="Enter here"
+                class="form-control weField"
+                rows = 2></textarea>
 
 
+                <div class="container text-center mt-2 " id ="weAddButton">
+                    <button onclick="addNewWEField()" class= " btn btn-primary btn-sm">Add Experience</button>
+                </div>
+            </div>
 
+            <div class="form-group mt-2" id="aq">
+                <label for="">Academic Qualifications</label>
+                <textarea type="text" 
+                placeholder="Enter here"
+                class="form-control aqField"
+                rows = 2></textarea>
 
+                <div class="container text-center mt-2"  id ="aqAddButton">
+                    <button onclick="addNewAQField()" class= " btn btn-primary btn-sm">Add More</button>
+                </div>
+            </div>
+
+            
          </div>
 
      </div>
+
+
     </div>
 
+    <div class="container text-center mt-3">
+
+    <button class="btn btn-primary btn-lg">Generate CV</button>         
+     </div>
 
  
     <script 
