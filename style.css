@@ -1,0 +1,14 @@
+
+.myimg{
+    border:1px solid cyan;
+    border-radius: 50%;
+    width: 200px;
+}
+
+.background{
+    background-color: aqua;
+}
+
+#cv-template{
+    display: none;
+}
