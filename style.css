@@ -3,6 +3,7 @@
     border:1px solid cyan;
     border-radius: 50%;
     width: 200px;
+    height: auto;
 }
 
 .background{

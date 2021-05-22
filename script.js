@@ -90,6 +90,24 @@ for(let e of aqs){
 
 document.getElementById('aqT').innerHTML = str1;
 
+//code for setting photo
+
+let file = document.getElementById('imgField').files[0];
+console.log(file);
+
+let reader = new FileReader();
+
+reader.readAsDataURL(file);
+
+console.log(reader.result);
+
+//set image in tempelate
+
+reader.onloadend = function(){
+    document.getElementById('imgT').src = reader.result;
+};
+
+
 document.getElementById('cv-form').style.display='none';
 document.getElementById('cv-template').style.display='block';
 
